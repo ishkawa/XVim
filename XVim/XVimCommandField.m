@@ -60,7 +60,7 @@
 
 // Drawing Caret
 - (void)_drawInsertionPointInRect:(NSRect)rect color:(NSColor*)color{
-    color = [color colorWithAlphaComponent:0.5];
+    color = [color colorWithAlphaComponent:1.0];
     NSPoint aPoint=NSMakePoint( rect.origin.x,rect.origin.y+rect.size.height/2);
     NSUInteger glyphIndex = [[self layoutManager] glyphIndexForPoint:aPoint inTextContainer:[self textContainer]];
     NSRect glyphRect = [[self layoutManager] boundingRectForGlyphRange:NSMakeRange(glyphIndex, 1)  inTextContainer:[self textContainer]];

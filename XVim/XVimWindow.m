@@ -350,7 +350,7 @@
     	[[[NSColor blueColor] colorWithAlphaComponent:1.0] set];
         NSRectFillUsingOperation(rect, NSCompositeDifference);
     } else {
-	    [[color colorWithAlphaComponent:alphaRatio] set];
+	    [[color colorWithAlphaComponent:1.0] set];
 	    NSRectFillUsingOperation(rect, NSCompositeSourceOver);
     }
     return rect;

@@ -170,7 +170,7 @@
             // NSTextView does not draw insertion point when selecting text. We have to draw insertion point by ourselves.
             NSUInteger glyphIndex = [self insertionPoint];
             NSRect glyphRect = [self xvim_boundingRectForGlyphIndex:glyphIndex];
-            [[[self insertionPointColor] colorWithAlphaComponent:0.5] set];
+            [[[self insertionPointColor] colorWithAlphaComponent:1.0] set];
             NSRectFillUsingOperation( glyphRect, NSCompositeSourceOver);
         }
         
